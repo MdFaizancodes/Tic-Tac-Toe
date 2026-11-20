@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">Tic-Tac-Toe</h1>
+        <div class="boardContainer">
+            <div class="msg">Let's Start the Game </div>
+            <div class="board">
+                <div class="cell" data-x="0" data-y="0"></div>
+                <div class="cell" data-x="0" data-y="1"></div>
+                <div class="cell" data-x="0" data-y="2"></div>
+                <div class="cell" data-x="1" data-y="0"></div>
+                <div class="cell" data-x="1" data-y="1"></div>
+                <div class="cell" data-x="1" data-y="2"></div>
+                <div class="cell" data-x="2" data-y="0"></div>
+                <div class="cell" data-x="2" data-y="1"></div>
+                <div class="cell" data-x="2" data-y="2"></div>
+            </div>
+        </div>
+        <div class="scoreBoardContainer">
+            <h2 class="scoreBoard"> Score Board</h2>
+            <div class="playerOne info">
+                <img src="./icons/profile/icons8-profile-96.png" alt="profile icon" class="profile">
+                <div class="playerName1">Name:</div>
+                <div class="player1WinScore">Win: 0</div>
+                <img src="./images/O Icons.png" alt="O Icon" class="marker">
+            </div>
+            <div class="playerTwo info">
+                <img src="./icons/profile/icons8-profile-96.png" alt="profile icon" class="profile">
+                <div class="playerName2">Name:</div>
+                <div class="player2WinScore">Win: 0</div>
+                <img src="./images/X Icon.png" alt="X Icon" class="marker">
+            </div>
+
+            <button command="show-modal" commandfor="dialog" class="newGameButton">New Game</button>
+            <button class="restartButton">Restart Game</button>
+        </div>
+        <dialog id="dialog" class="dialog">
+            <form  >
+                <fieldset>
+
+                    <label for="firstPlayerName">First Player Name:</label>
+                    <input type="text" id="firstPlayerName" name="firstPlayerName" placeholder="First Player Name" >
+                    <label for="secondPlayerName">Second Player Name:</label>
+                    <input type="text" id="secondPlayerName" name="secondPlayerName" placeholder="Second Player Name">
+                </fieldset>
+
+
+            </form>
+            <button class="submit" command="close" commandfor="dialog">Start</button>
+        </dialog>
+    </div>
+</body>
+
+</html>
